@@ -1,6 +1,6 @@
-package Ejercicio1_Prueba_IIB_2.Main;
+package Ejercicio1_Prueba_IIB.Main;
 
-import Ejercicio1_Prueba_IIB_2.Forms.LoginForm;
+import Ejercicio1_Prueba_IIB.Forms.LoginForm;
 
 public class Main {
     public static void main(String[] args) {

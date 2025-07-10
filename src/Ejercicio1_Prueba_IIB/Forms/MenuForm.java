@@ -1,6 +1,6 @@
-package Ejercicio1_Prueba_IIB_2.Forms;
+package Ejercicio1_Prueba_IIB.Forms;
 
-import Ejercicio1_Prueba_IIB_2.Clases.Producto;
+import Ejercicio1_Prueba_IIB.Clases.Producto;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

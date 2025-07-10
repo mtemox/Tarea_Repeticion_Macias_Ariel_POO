@@ -1,4 +1,4 @@
-package Ejercicio1_Prueba_IIB_2.Clases;
+package Ejercicio1_Prueba_IIB.Clases;
 
 public class Producto {
     // Atributos de la clase

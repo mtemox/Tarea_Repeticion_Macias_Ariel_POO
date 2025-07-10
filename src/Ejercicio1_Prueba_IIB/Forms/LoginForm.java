@@ -1,14 +1,15 @@
-package Ejercicio1_Prueba_IIB_2.Forms;
+package Ejercicio1_Prueba_IIB.Forms;
 
-import Ejercicio1_Prueba_IIB_2.Clases.Producto;
+import Ejercicio1_Prueba_IIB.Clases.Producto;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoginForm extends JFrame {
-    private String usuario = "macias";
-    private String contrasena = "esfot";
+    // Añado más seguridad a las credenciales de ingreso
+    private static final String usuario = "macias";
+    private static final String contrasena = "esfot";
 
     private JPanel Panel;
     private JTextField txt_usuario;
@@ -29,6 +30,8 @@ public class LoginForm extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
 
+        // Inicializo la variable producto para que no sea null al principio
+        this.p1 = new Producto("", "", "", 0.0, 0);
 
         // Acción del botón de limpiar
         btn_limpiar.addActionListener(new ActionListener() {

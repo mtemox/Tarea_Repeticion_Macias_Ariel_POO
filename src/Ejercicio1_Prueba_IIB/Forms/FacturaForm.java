@@ -1,6 +1,6 @@
-package Ejercicio1_Prueba_IIB_2.Forms;
+package Ejercicio1_Prueba_IIB.Forms;
 
-import Ejercicio1_Prueba_IIB_2.Clases.Producto;
+import Ejercicio1_Prueba_IIB.Clases.Producto;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -17,6 +17,8 @@ public class FacturaForm extends JFrame {
     private JButton btn_calcular;
     private JButton btn_regresar;
     private JLabel lbl_iva;
+    // Declaro una variable para la tasa del IVA
+    private static final double tasaIva = 0.15;
 
     private Producto p1;
 
@@ -83,7 +85,8 @@ public class FacturaForm extends JFrame {
                             double total;
 
                             subtotal = cantidadIntput * precioUnitarioProducto;
-                            total = subtotal * 1.15;
+                            // Uso la constante del iva
+                            total = subtotal * (1 + tasaIva);
 
                             txt_subtotal.setText(String.format("%.2f", subtotal));
                             txt_total.setText(String.format("%.2f", total));
